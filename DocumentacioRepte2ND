@@ -1,0 +1,96 @@
+Hem fet servir el join el que esta fent és atura l'execució del fil i espera
+que el fil finalitzi el fil invocat.
+
+Resultat:
+Fil 1 0
+Fil 1 1
+Fil 1 2
+Fil 1 3
+Fil 1 4
+Fil 1 5
+Fil 1 6
+Fil 1 7
+Fil 1 8
+Fil 1 9
+Fil 2 0
+Fil 2 1
+Fil 2 2
+Fil 2 3
+Fil 2 4
+Fil 2 5
+Fil 2 6
+Fil 2 7
+Fil 2 8
+Fil 2 9
+
+Al treure el join al segon fil el que pasa es que no li estem dient que que s'esperi
+fins que acabi el fil dos y que el que esta fent es continuar el codi.
+
+Resultat:
+Fil 1 0
+Fil 1 1
+Fil 1 2
+Fil 1 3
+Fil 1 4
+Fil 1 5
+Fil 1 6
+Fil 1 7
+Fil 1 8
+Fil 1 9
+padre: 0
+Fil 2 0
+Fil 2 1
+padre: 1
+Fil 2 2
+padre: 2
+Fil 2 3
+padre: 3
+Fil 2 4
+padre: 4
+Fil 2 5
+padre: 5
+Fil 2 6
+padre: 6
+Fil 2 7
+padre: 7
+Fil 2 8
+padre: 8
+Fil 2 9
+padre: 9
+
+
+Al treure el join al primer fil el que pasa es que no li estem dient que s'esperi
+fins que acabi el fil 1 y que el que esta fent es iniciar el fil 2 despres s'espera a s'excecuti
+i acabi mostra el següent codi i ja desprès ens mostra del fil 1
+
+Fil 2 0
+Fil 2 1
+Fil 2 2
+Fil 2 3
+Fil 2 4
+Fil 2 5
+Fil 2 6
+Fil 2 7
+Fil 2 8
+Fil 2 9
+padre: 0
+padre: 1
+padre: 2
+padre: 3
+padre: 4
+padre: 5
+padre: 6
+padre: 7
+padre: 8
+padre: 9
+
+Fil 1 0
+Fil 1 1
+Fil 1 2
+Fil 1 3
+Fil 1 4
+Fil 1 5
+Fil 1 6
+Fil 1 7
+Fil 1 8
+Fil 1 9
